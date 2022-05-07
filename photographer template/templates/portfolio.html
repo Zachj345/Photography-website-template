@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} Portfolio {%endblock%}</title>
+    {% extends 'base.html' %} {% block content %}
+    <style>
+      #home-icon {
+        color: antiquewhite;
+      }
+      #contact-icon {
+        color: antiquewhite;
+      }
+      body {
+        background-color: rgb(41, 38, 38);
+        z-index: auto;
+      }
+      .headie {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        color: whitesmoke;
+      }
+      .break {
+        height: 15%;
+      }
+      .pic-container {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+      }
+
+      .pics {
+        flex-direction: row;
+        width: 44%;
+        border: solid grey 2px;
+        margin: 10px;
+        transform: 0.2s;
+      }
+      .pics:hover {
+        transform: scale(1.04);
+      }
+      .horizontal-pic-container {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+      }
+      .pic {
+        flex-direction: row;
+        width: 90%;
+        border: solid grey 2px;
+        margin: 10px;
+        transform: 0.2s;
+      }
+      .pic:hover {
+        transform: scale(1.04);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="headie">Welcome to my Summer-Portfolio</h1>
+    <div class="break">
+      <br />
+      <br />
+    </div>
+    <div class="pic-container">
+      <img src="static/images/parrot.jpg" alt="Parrot" class="pics" />
+
+      <br />
+
+      <img src="static/images/city.jpg" alt="City" class="pics" />
+      <br />
+    </div>
+    <div class="horizontal-pic-container">
+      <img src="static/images/waterfall.jpg" alt="Waterfall" class="pic" />
+    </div>
+    <div class="pic-container">
+      <img src="static/images/budha.jpg" alt="Buddah" class="pics" />
+
+      <br />
+
+      <img src="static/images/tiger.jpg" alt="Tiger" class="pics" />
+      <br />
+    </div>
+    <div class="horizontal-pic-container">
+      <img src="static/images/rock.jpg" alt="Rock" class="pic" />
+    </div>
+  </body>
+  {%endblock%}
+</html>

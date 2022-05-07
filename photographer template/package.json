@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "medium-zoom": "^1.0.6"
+  }
+}

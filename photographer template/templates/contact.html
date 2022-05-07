@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} Contact me! {%endblock%}</title>
+    {% extends 'base.html' %} {% block content %}
+    <style>
+      body {
+        background-color: rgb(41, 38, 38);
+        z-index: auto;
+      }
+      .break {
+        height: 15%;
+      }
+
+      .headie {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        color: whitesmoke;
+        margin: 10% 0% 9% 0;
+        /* font-size: 335%; */
+        font-size: 5vw;
+      }
+      .contact-para {
+        color: antiquewhite;
+        text-align: center;
+        margin: 7% 0% 6% 8%;
+        font-size: 2.2vw;
+      }
+      .contact-div {
+        float: left;
+        width: 50%;
+      }
+
+      .rep-email-title {
+        margin: 13% 8% 6% 10%;
+        text-align: center;
+        color: whitesmoke;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2.5vw;
+
+        text-decoration: underline;
+      }
+      .rep-email {
+        margin: 9% 8% 6% 10%;
+        text-align: center;
+        color: antiquewhite;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2vw;
+      }
+      #email-box {
+        text-align: center;
+        margin-left: 7%;
+        min-width: 340px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="break">
+      <br />
+    </div>
+    <div class="contact-div">
+      <h1 class="headie">Contact me</h1>
+      <p class="contact-para">
+        If the images on this page have brought you pleasure, or if you are
+        interested in booking this mystery photographer. Please enter your email
+        below for a chance to be contacted by this photographers team to
+        schedule your own photo-shoot!
+      </p>
+      <br />
+      <br />
+      <form autocomplete="off" method="POST">
+        <div class="input-group mb-3" id="email-box">
+          <input
+            type="text"
+            class="form-control"
+            name="email"
+            placeholder="Enter your email"
+            aria-label="Your email"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-secondary" type="submit" id="button-addon2">
+            Submit Email
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="contact-div">
+      <p class="rep-email-title">REPRESENTATION</p>
+      <h4 class="rep-email">Name@example.com</h4>
+      <h4 class="rep-email">123 First Ave, Teaneck, NJ 07666</h4>
+    </div>
+  </body>
+  {%endblock%}
+</html>

@@ -10,18 +10,3 @@ mediumZoom('.horizontal-pic-container img', {
     scrollOffset: 10
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
